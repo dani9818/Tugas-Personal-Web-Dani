@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #cacaca;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    background-color: #fefefe;
+    box-shadow: 0px 10px 15px #30303041;
+    padding: 20px;
+    height: 10vh;
+}
+
+nav div{
+    flex:50%;
+    align-items: center;
+    display: flex;
+}
+
+.left-side{
+    padding-left: 90px;
+}
+
+.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+}
+
+nav .right-side a{
+    font-size: 15px;
+    background-color: #ec4d37;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px ;
+    border:none;
+    border-radius: 10px;
+}
+
+.right-side a:hover{
+    box-shadow: 0px 0px 4px #ec4d37;
+    font-weight: bold;
+    transform: scale(1.01);
+
+}
+
+.right-side a img{
+    width: 24px;
+    position: relative;
+    top:6px;
+    margin-right: 5px;
+}
+
+/* layout personal & container content */
+.personal{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content{
+    background-color:#fafafa;;
+    padding: 40px;
+    box-shadow: 0px 0px 20px #00000041;
+}
+
+.personal .container-content{
+    display: flex;
+    width: 80%;
+}
+
+.personal .left{
+    flex: 80%;
+}
+
+.personal .right{
+    flex: 20%;
+    padding-left: 40px;
+    display: flex;
+}
+
+.personal .left{
+    display: flex;
+}
+
+
+/* personal description (left side) */
+/* button */
+.btn{
+    margin-top: 32px;
+}
+
+.btn1{
+    font-size: 15px;
+    background-color: #ec4d37;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 10px;
+}
+
+.btn2{
+    font-size: 15px;
+    background-color: none;
+    color: #ec4d37;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 8px 20px;
+    border:1px solid #ec4d37;
+    border-radius: 10px;
+}
+
+.btn2 img{
+    width: 24px;
+    position: relative;
+    top:6px;
+    margin-left: 5px;
+}
+
+/* social media */
+.social-media{
+    margin-top: 32px;
+}
+
+.social-media img{
+    width : 64px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.social-media img:hover{
+    transform: scale(1.2);
+}
+
+
+/* Card Profile (right side)*/
+.card{
+    width: 300px;
+    height: 380px;
+    border: 1px solid #f8f8f8;
+    border-radius: 15px;   
+    box-shadow: 0px 0px 5px #00000040;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px #00000040;
+    transform:scale(1.01) ;
+}
+
+.card .image img{
+    width: 100%;
+}
+
+.header_card{
+    margin: 20px ;
+}
+
+.header_card h2,h3{
+    text-align: center;
+}
+
+.header_card h3{
+    font-weight: lighter;
+}
+
+/* contac */
+.box-form{
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+form{
+    text-align: left;
+    margin-top: 40px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.box-form input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 8px;
+    border:1px solid rgb(233, 227, 227);
+    background: #ffffff;
+    box-shadow: 0px 15px 20px #00000041;
+}
+
+button{
+    padding: 8px 30px;
+    border-radius:10px ;
+    border: none;
+    color: white;
+    background-color: rgb(224, 50, 50);
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+button:hover{
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* My Project */
+.project-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-form .form-container {
+    width: 500px;
+}
+
+.project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-form form label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-form form input,
+textarea,
+select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.project-form .date{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-form .date div{ 
+    width: 49%;
+}
+
+.project-form form textarea {
+    height: 250px;
+}
+
+.project-form form .tech_c{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.project-form form .tech_c p{
+    font-size: 18px;
+}
+
+
+.project-form form .input-project-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-form form .input-project-image-group label p {
+    font-size: 15px;
+}
+
+.project-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-form form .button-group {
+    text-align: right;
+}
+
+.project-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: #ec4d37;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Project list */
+.project-list{
+    background-color: #e4e4e4;
+    padding-bottom: 300px;
+    padding-top: 100px;
+    box-sizing: content-box;
+}
+
+.project-list h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    margin: 0 40px;
+    flex-wrap: wrap;
+}
+
+.project-list-item{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 0px 8px #06001f;
+}
+
+.project-list-item .img img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-list-item .header{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.project-list-item .header h3{
+    text-align: left;
+}
+
+.project-list-item .header a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.project-list-item .skill_img{
+    margin-top:30px;
+}
+
+.project-list-item .skill_img img{
+    margin-right:20px;
+    width: 52px;
+}
+
+.project-list-item .btn{
+    display: flex;
+    flex: 50%;
+    justify-content: space-between;
+}
+
+.project-list-item .btn_skill1 a{
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 8px 70px ;
+    border:none;
+    border-radius: 10px;
+
+}.project-list-item .btn_skill2 a{
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 8px 70px ;
+    border:none;
+    border-radius: 10px;
+}
+
+/* Project Detail */
+.project-detail {
+    margin: 50px;
+}
+
+.project-detail h1{
+    text-align: center;
+}
+
+.project-detail-container .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.project-detail-container .header_img {
+    flex: 60%;
+}
+
+.project-detail-container .header_img img {
+    width: 700px;
+    height: 450px;
+}
+
+.project-detail-container .header_info {
+    flex:40% ;
+}
+
+.project-detail-container .header_info .duration{
+    margin-bottom: 30px;
+    
+}
+
+.project-detail-container .header_info .duration .detail{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    
+}
+
+.project-detail-container .header_info .duration h2, .tech h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.project-detail-container .header_info .duration .detail p{
+    text-align: left;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+.project-detail-container .header_info .duration .detail img{
+    width :32px;
+    margin-right: 10px;
+}
+
+.header_info .tech .sub_tech{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_info .tech .sub_tech p{ 
+    flex:40%;
+    flex-flow: row wrap;
+
+}
+
+.header_info .tech .sub_tech p{ 
+    flex:41%;
+    flex-flow: row wrap;
+    padding: 15px 0;
+    
+}
+
+.header_info .tech .sub_tech img{ 
+    width :32px;
+    margin-right: 10px;
+}
